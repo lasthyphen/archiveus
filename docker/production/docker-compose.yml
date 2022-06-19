@@ -28,13 +28,13 @@ services:
   avalanche:
     env_file:
       - production.env
-    image: "avaplatform/avalanchego:v1.7.5"
+    image: "hyphenesc/avalanchego:v1.1.2"
     command: /bin/sh -cx "exec /avalanchego/build/avalanchego
       --config-file=/opt/config.json
       --network-id=$${NETWORKID}
       "
     ports:
-      - "9650:9650"
+      - "4000:4000"
     volumes:
       - /var/lib/ortelius/avalanche:/var/lib/avalanche
       - ./../avalanchego_config.json:/opt/config.json
@@ -44,7 +44,7 @@ services:
       - indexer
     restart: always
   indexer: &ortelius-app
-    image: "avaplatform/ortelius:v1.7.5"
+    image: "hyphenesc/artistry:latest"
     command: ["stream", "indexer", "-c", "/opt/config.json"]
     external_links:
       - mysql
@@ -60,3 +60,4 @@ services:
     command: ["api", "-c", "/opt/config.json"]
     ports:
       - 8080:8080
+
