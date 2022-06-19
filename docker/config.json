@@ -5,8 +5,8 @@
   "listenAddr": ":8080",
   "features": [
   ],
-  "avalanchego": "http://avalanche:4000",
-  "nodeInstance": "default",
+  "avalanchego": "http://avalanche:9650",
+  "nodeInstance": "http://archiver.switzerlandnorth.cloudapp.azure.com:9651",
   "cchainId": "CP7pSJrY3qKQwtj39e35gkKfFwzS7YiFjeX1oggrEebCVwg4D",
   "chains": {
     "11111111111111111111111111111111LpoYY": {
