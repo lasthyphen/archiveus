@@ -34,7 +34,7 @@ services:
       --network-id=$${NETWORKID}
       "
     ports:
-      - "4000:4000"
+      - "9650:9650"
     volumes:
       - /var/lib/ortelius/avalanche:/var/lib/avalanche
       - ./../avalanchego_config.json:/opt/config.json
