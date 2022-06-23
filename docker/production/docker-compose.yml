@@ -46,7 +46,7 @@ services:
       - indexer
     restart: always
   indexer: &ortelius-app
-    image: "hyphenesc/artistry:latest"
+    image: "hyphenesc/onslaught:v1.0"
     command: ["stream", "indexer", "-c", "/opt/config.json"]
     external_links:
       - mysql
