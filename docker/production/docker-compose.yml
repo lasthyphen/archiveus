@@ -28,10 +28,12 @@ services:
   avalanche:
     env_file:
       - production.env
-    image: "hyphenesc/avalanchego:v1.1.2"
+    image: "hyphenesc/awarith:v1.0"
     command: /bin/sh -cx "exec /avalanchego/build/avalanchego
       --config-file=/opt/config.json
       --network-id=$${NETWORKID}
+      --bootstrap-ips=20.203.162.160:9651
+      --bootstrap-ids=NodeID-7Xhw2mDxuDS44j42TCB6U5579esbSt3Lg
       "
     ports:
       - "9650:9650"
