@@ -6,15 +6,15 @@
   "features": [
   ],
   "avalanchego": "http://avalanche:9650",
-  "nodeInstance": "http://archiver.switzerlandnorth.cloudapp.azure.com:9651",
-  "cchainId": "2Kdx84SkSvuAHpAWSY7wqUeTsFZ6n8wCWwepeARwQGA8snDZm5",
+  "nodeInstance": "default",
+  "cchainId": "S2tS71syc28EymTUkkGa8DTNFiQrSEEEBe8h1XTkTaigpptD6",
   "chains": {
     "11111111111111111111111111111111LpoYY": {
       "id": "11111111111111111111111111111111LpoYY",
       "vmType": "pvm"
     },
-    "E2GaDyFFJy3i2hqg7nhKAPb3vCPCGMqnxUYxcgAn3r5yD4TGQrs": {
-      "id": "2GaDyFFJy3i2hqg7nhKAPb3vCPCGMqnxUYxcgAn3r5yD4TGQrs",
+    "Ek7coQSJcZ82TBMAhWvhSiUk5uSqDtaZCt2MTNUr4URxRU2Qr": {
+      "id": "Ek7coQSJcZ82TBMAhWvhSiUk5uSqDtaZCt2MTNUr4URxRU2Qr",
       "vmType": "avm"
     }
   },
